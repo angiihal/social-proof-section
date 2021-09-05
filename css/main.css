@@ -1,11 +1,53 @@
+/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-size: 95%, 100%;
+    color: #582e56;
     margin: 60px 0;
+    font-size: 16px;
+    font-family: "Spartan", sans-serif;
 }
+
+h1 {
+    font-size: 2.5em;
+}
+
+h3,
+h4,
+p {
+    font-size: 1.2em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+h4 {
+    color: #a8558d;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+h3,
+.review p {
+    color: #fff;
+}
+
+.rating,
+.review {
+    border-radius: 10px;
+}
+
+/* Mobile Styles */
 
 main {
     width: 85%;
@@ -17,6 +59,14 @@ main {
     flex-flow: column wrap;
 }
 
+.description-text {
+    text-align: center;
+}
+
+.description-text p {
+    font-size: 1.3em;
+}
+
 .star-ratings {
     margin: 40px 0;
     display: flex;
@@ -25,10 +75,16 @@ main {
 }
 
 .rating {
+    background-color: #f7f2f8;
     padding: 25px 0;
     display: flex;
     align-items: center;
     flex-flow: column wrap;
+}
+
+.rating-one,
+.rating-two {
+    margin-bottom: 15px;
 }
 
 .stars-container {
@@ -39,6 +95,7 @@ main {
 
 .stars-container img {
     padding: 0 5px;
+    width: 25px;
 }
 
 .reviews-container {
@@ -47,9 +104,9 @@ main {
 }
 
 .review {
-    width: 85%;
+    background-color: #511f50;
     margin: 0 auto;
-    padding: 45px 0;
+    padding: 45px;
 }
 
 .review-one,
