@@ -116,6 +116,7 @@ main {
 
 .customer {
     display: flex;
+    align-items: center;
     flex-flow: row nowrap;
 }
 
@@ -123,6 +124,82 @@ main {
     margin-right: 25px;
 }
 
+.customer figure img {
+    border-radius: 50px;
+}
+
 .review p {
     margin: 30px 0;
+}
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-size: 30%, 80%;
+    }
+
+    .description {
+        margin-bottom: 50px;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row nowrap;
+    }
+
+    .description-text {
+        flex-basis: 35%;
+        text-align: left;
+    }
+
+    .star-ratings {
+        width: 60%;
+    }
+
+    .rating {
+        flex-flow: row wrap;
+        width: 85%;
+    }
+
+    .rating-two {
+        align-self: center;
+    }
+
+    .rating-three {
+        align-self: flex-end;
+    }
+
+    .stars-container {
+        margin: 0 15px;
+    }
+
+    .reviews-container {
+        min-height: 400px;
+        flex-direction: row;
+    }
+
+    .review {
+        width: 33%;
+    }
+
+    .review-one,
+    .review-two {
+        margin-right: 20px;
+    }
+
+    .review-one {
+        align-self: flex-start;
+    }
+
+    .review-two {
+        align-self: center;
+    }
+
+    .review-three {
+        align-self: flex-end;
+    }
+
+    .review p {
+        margin-bottom: 0;
+    }
 }
